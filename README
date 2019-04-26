@@ -1,0 +1,26 @@
+This web resource defined in the Apache config is used for serving HTML code such as
+Javascript, CSS, images and/or other files. The purpose is to decrease the maintenance
+for distributed applications that may run on multiplde servers but using similar code 
+bases. These systems may all want to run the exact same javascript or CSS and instead 
+of copying those HTML code resources to every distributed web server, we host those 
+resources on this VirtualHost available for use by all.
+
+==================
+File Structure
+==================
+
+|- <application name>
+    |-- js/
+        |-- <all the javascript files>
+    |-- css/
+        |-- <all the css files>
+    |-- images/
+        |-- <all the images>
+|- <application name #2>
+    |-- js/
+        |-- <all the javascript files>
+    |-- css/
+        |-- <all the css files>
+    |-- images/
+        |-- <all the images>
+

@@ -1,0 +1,12 @@
+APPLICATION = info
+============================================================
+
+The info routine is a Perl CGI script used by the JGOFS/GLOBEC
+data management software to display metadata about the
+selected data object (dataset). The routine uses a separate
+Perl subroutine (getinfor.pl) to get the metadata information
+from the metadata database. If no information is available
+from the metadata database, info will look for a .info text
+file in the same sub-directory as the JGOFS/GLOBEC .objects
+entry. The getinfor.pl script formats the metadata and returns
+it to the info routine to display as a web page. 
